@@ -1,0 +1,26 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_mineral_type.csv",
+      "format": {"type": "csv"}
+    },
+    
+    "mark": {"type":"line"},
+    "encoding": {
+    "x": {
+            "field": "Date", 
+            "type": "temporal", 
+            "timeUnit": "yearmonth", 
+            "axis": {"format": "%b %Y"}
+        },
+    "y": {
+        "field": "Expenditure",
+        "type": "quantitative"
+      }, 
+      "color": {
+        "field": "Mineral Type", 
+        "type": "nominal"
+      }
+    }
+  }
+  
