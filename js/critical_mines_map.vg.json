@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 450,
+  "title": "Critical Mines of Australia 2023",
+  "background":"aliceblue",
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-Homework-W9/88ca390caede437fe666141e810edd8983e1d673/js/graticules_30.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "lightgray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-Homework-W9/8d9d4b9b3164808a74332e58e96783c433f31be0/js/aus_map_no_lables.topojson",
+         "format": {
+          "type": "topojson", "feature": "STE_2021_AUST_GDA2020"
+        }
+        },
+      "mark": {
+        "type": "geoshape", 
+        "fill": "darkolivegreen", 
+        "fillOpacity": 0.2,
+        "stroke": "darkgreen", 
+        "strokeOpacity": 0.5, 
+        "strokeWidth": 0.5
+      }
+      
+    }, 
+    {
+      "data": {
+      "values": [
+        {"State": "New South Wales", "lat": -31.2532, "lon": 146.9211},
+        {"State": "Victoria", "lat": -37.4713, "lon": 144.7852},
+        {"State": "Queensland", "lat": -20.9176, "lon": 142.7028},
+        {"State": "South Australia", "lat": -30.0002, "lon": 136.2092},
+        {"State": "Western Australia", "lat": -27.6728, "lon": 121.6283},
+        {"State": "Tasmania", "lat": -42.0409, "lon": 146.8087},
+        {"State": "Northern Territory", "lat": -19.4914, "lon": 132.5505},
+        {"State": "Australian Capital Territory", "lat": -35.4735, "lon": 149.0124}
+      ]},
+      "mark": {
+        "type": "text",
+        "dy": -10,
+        "fontSize": 9,
+        "fontWeight": 200,
+        "color": "black", 
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "State"}
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-Homework-W9/main/data/critical_mines_location_data.csv",
+        "format": {"type": "csv"}
+      },
+        "mark": {
+          "type": "circle",
+          "stroke": "black", 
+          "strokeOpacity": 0.6, 
+          "strokeWidth": 0.4, 
+          "fillOpacity": 0.9,
+          "tooltip": true, 
+          "size": 70
+
+        },
+        "encoding": {
+          "longitude": {"field": "Longitude", "type": "quantitative"},
+          "latitude": {"field": "Latitude", "type": "quantitative"},
+          "color": {
+            "field": "Commodity Group",
+            "type": "nominal",
+          "title": "Mineral Group",
+          "scale": {"scheme": "tableau20"}
+          },
+          "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Name", "title": "Mine Site Name"},
+          {"field": "Commodity Group", "type": "nominal", "title": "Mineral Group"}]
+        }
+    
+    }
+  ]
+}
