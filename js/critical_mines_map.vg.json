@@ -19,7 +19,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/milnay/FIT3179-Homework-W9/8d9d4b9b3164808a74332e58e96783c433f31be0/js/aus_map_no_lables.topojson",
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/js/aus%20map%20with%20no%20labels.json",
          "format": {
           "type": "topojson", "feature": "STE_2021_AUST_GDA2020"
         }
