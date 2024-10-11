@@ -7,6 +7,12 @@
     "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_deposit_type.csv",
     "format": {"type": "csv"}
   },
+  "transform": [
+    {
+      "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent ' + datum.Expenditure + 'M $ in exploring ' + datum['Deposit type'] + '.'",
+      "as": "custom_tooltip"
+    }
+  ],
   
   "params": [
     {
@@ -29,8 +35,7 @@
         }
       ],
       "mark": {
-        "type": "area",
-        "tooltip": {"content": "encoding"}
+        "type": "area"
       },
       "encoding": {
         "x": {
@@ -38,13 +43,14 @@
           "type": "temporal",
           "field": "Date",
           "title": "Date",
-          "axis": {"format": "%b %Y" }
+          "axis": {"format": "%b %Y"}
         },
         "y": {
           "field": "Expenditure",
           "type": "quantitative",
           "title": "Expenditure (in millions)"
-        }
+        }, 
+        "tooltip":{ "field": "custom_tooltip", "type": "nominal"}
       }
     },
     {
@@ -54,8 +60,7 @@
         }
       ],
       "mark": {
-        "type": "area",
-        "tooltip": {"content": "encoding"}
+        "type": "area"
       },
       "encoding": {
         "x": {
@@ -78,7 +83,8 @@
             "range": ["#1f77b4", "#aec7e8"]
           },
           "title": "Deposit Type"
-        }
+        }, 
+        "tooltip": { "field": "custom_tooltip", "type": "nominal"}
       }
     }
   ]
