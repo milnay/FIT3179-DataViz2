@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Exploration Expenditure by Deposit Type",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_deposit_type.csv",
+    "format": {"type": "csv"}
+  },
+  
+  "params": [
+    {
+      "name": "depositTypeSelection",
+      "value": "Total deposits",  
+      "bind": {
+        "input": "select",
+        "options": ["Total deposits", "Existing vs New deposits"],
+        "labels": ["Total deposits", "Existing vs New Deposits"],
+        "name": "Select Deposit Type: "
+      }
+    }
+  ],
+
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "tooltip": {"content": "encoding"}
+      },
+      "encoding": {
+        "x": {
+          "timeUnit":"yearmonth",
+          "type": "temporal",
+          "field": "Date",
+          "title": "Date",
+          "axis": {"format": "%b %Y" }
+        },
+        "y": {
+          "field": "Expenditure",
+          "type": "quantitative",
+          "title": "Expenditure (in millions)"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "depositTypeSelection == 'Existing vs New deposits' && datum['Deposit type'] != 'Total deposits'"
+        }
+      ],
+      "mark": {
+        "type": "area",
+        "tooltip": {"content": "encoding"}
+      },
+      "encoding": {
+        "x": {
+          "timeUnit":"yearmonth",
+          "type": "temporal",
+          "field": "Date",
+          "title": "Date",
+          "axis": {"format": "%b %Y" }
+        },
+        "y": {
+          "field": "Expenditure",
+          "type": "quantitative",
+          "title": "Expenditure (in millions)"
+            },
+        "color": {
+          "field": "Deposit type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Existing deposits", "New deposits"],
+            "range": ["#1f77b4", "#aec7e8"]
+          },
+          "title": "Deposit Type"
+        }
+      }
+    }
+  ]
+}
