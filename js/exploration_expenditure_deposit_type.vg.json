@@ -29,29 +29,71 @@
 
   "layer": [
     {
-      "transform": [
+      "layer" : [
         {
-          "filter": "depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'"
-        }
-      ],
-      "mark": {
-        "type": "area"
-      },
-      "encoding": {
-        "x": {
-          "timeUnit":"yearmonth",
-          "type": "temporal",
-          "field": "Date",
-          "title": "Date",
-          "axis": {"format": "%b %Y"}
-        },
-        "y": {
-          "field": "Expenditure",
-          "type": "quantitative",
-          "title": "Expenditure (in millions)"
+          "transform": [
+            {
+            "filter": "depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'"
+            }
+          ],
+          "mark": {
+          "type": "area"
+                  },
+        "encoding": {
+          "x": {
+            "timeUnit":"yearmonth",
+            "type": "temporal",
+            "field": "Date",
+            "title": "Date",
+            "axis": {"format": "%b %Y"}
+          },
+          "y": {
+            "field": "Expenditure",
+            "type": "quantitative",
+            "title": "Expenditure (in millions)"
+          }, 
+          "tooltip": { "field": "custom_tooltip", "type": "nominal" }
+                  }
         }, 
-        "tooltip":{ "field": "custom_tooltip", "type": "nominal"}
-      }
+        {
+          "transform": 
+          [
+          {
+            "window": [
+              {
+                "op": "first_value",
+                "field": "Expenditure",
+                "as": "Initial_Expenditure"
+              },
+              {
+                "op": "last_value",
+                "field": "Expenditure",
+                "as": "Final_Expenditure"
+              }
+                      ]
+        },
+        {
+          "filter":
+            "datum.Initial_Expenditure == 353.9 && datum.Final_Expenditure == 1015.3  && depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'" 
+        },
+        {
+          "calculate": "(datum. Final_Expenditure - datum.Initial_Expenditure) / datum.Initial_Expenditure * 100",
+          "as": "Percentage_Increase_value"
+        }, {
+          "calculate": "'Exploration expenditure for ' + datum['Deposit type'] + ' rose by ' + format(datum.Percentage_Increase_value, '.1f') + '%' ",
+          "as": "Percentage_Increase"
+          }
+        ],
+        "mark": {
+        "type": "text",
+        "align": "center",
+        "dx": -30,
+        "dy": -120,
+        "color": "black", "tooltip":true
+                },
+        "encoding":  {"text": {"field": "Percentage_Increase"}}
+        }
+      ]
     },
     {
       "transform": [
@@ -74,7 +116,7 @@
           "field": "Expenditure",
           "type": "quantitative",
           "title": "Expenditure (in millions)"
-            },
+        },
         "color": {
           "field": "Deposit type",
           "type": "nominal",
