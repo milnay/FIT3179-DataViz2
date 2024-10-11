@@ -1,0 +1,166 @@
+Date,Expenditure,Mineral Type
+Jun 2016,54.8,Base Metals
+Sep 2016,59.0,Base Metals
+Dec 2016,63.4,Base Metals
+Mar 2017,54.4,Base Metals
+Jun 2017,94.1,Base Metals
+Sep 2017,111.7,Base Metals
+Dec 2017,120.6,Base Metals
+Mar 2018,110.8,Base Metals
+Jun 2018,153.1,Base Metals
+Sep 2018,146.2,Base Metals
+Dec 2018,157.9,Base Metals
+Mar 2019,128.1,Base Metals
+Jun 2019,188.6,Base Metals
+Sep 2019,208.7,Base Metals
+Dec 2019,199.5,Base Metals
+Mar 2020,139.5,Base Metals
+Jun 2020,133.5,Base Metals
+Sep 2020,137.8,Base Metals
+Dec 2020,155.7,Base Metals
+Mar 2021,161.8,Base Metals
+Jun 2021,195.8,Base Metals
+Sep 2021,236.8,Base Metals
+Dec 2021,265.0,Base Metals
+Mar 2022,207.9,Base Metals
+Jun 2022,241.2,Base Metals
+Sep 2022,274.6,Base Metals
+Dec 2022,265.1,Base Metals
+Mar 2023,235.4,Base Metals
+Jun 2023,282.4,Base Metals
+Sep 2023,295.5,Base Metals
+Dec 2023,272.9,Base Metals
+Mar 2024,198.5,Base Metals
+Jun 2024,233.0,Base Metals
+Jun 2016,156.9,Gold
+Sep 2016,159.1,Gold
+Dec 2016,182.3,Gold
+Mar 2017,155.2,Gold
+Jun 2017,192.6,Gold
+Sep 2017,192.9,Gold
+Dec 2017,208.9,Gold
+Mar 2018,187.4,Gold
+Jun 2018,220.9,Gold
+Sep 2018,239.7,Gold
+Dec 2018,244.1,Gold
+Mar 2019,223.0,Gold
+Jun 2019,259.8,Gold
+Sep 2019,281.3,Gold
+Dec 2019,303.9,Gold
+Mar 2020,272.3,Gold
+Jun 2020,304.4,Gold
+Sep 2020,356.1,Gold
+Dec 2020,383.5,Gold
+Mar 2021,360.2,Gold
+Jun 2021,429.8,Gold
+Sep 2021,417.9,Gold
+Dec 2021,390.8,Gold
+Mar 2022,363.6,Gold
+Jun 2022,421.7,Gold
+Sep 2022,380.5,Gold
+Dec 2022,359.3,Gold
+Mar 2023,275.5,Gold
+Jun 2023,310.5,Gold
+Sep 2023,333.4,Gold
+Dec 2023,323.1,Gold
+Mar 2024,284.4,Gold
+Jun 2024,296.6,Gold
+Jun 2016,76.8,Iron Ore
+Sep 2016,79.8,Iron Ore
+Dec 2016,73.7,Iron Ore
+Mar 2017,53.5,Iron Ore
+Jun 2017,84.3,Iron Ore
+Sep 2017,83.8,Iron Ore
+Dec 2017,68.9,Iron Ore
+Mar 2018,50.1,Iron Ore
+Jun 2018,89.0,Iron Ore
+Sep 2018,86.3,Iron Ore
+Dec 2018,75.5,Iron Ore
+Mar 2019,67.4,Iron Ore
+Jun 2019,94.8,Iron Ore
+Sep 2019,102.8,Iron Ore
+Dec 2019,84.6,Iron Ore
+Mar 2020,75.2,Iron Ore
+Jun 2020,98.7,Iron Ore
+Sep 2020,111.0,Iron Ore
+Dec 2020,110.2,Iron Ore
+Mar 2021,101.2,Iron Ore
+Jun 2021,150.8,Iron Ore
+Sep 2021,174.6,Iron Ore
+Dec 2021,130.8,Iron Ore
+Mar 2022,139.5,Iron Ore
+Jun 2022,201.0,Iron Ore
+Sep 2022,200.0,Iron Ore
+Dec 2022,174.5,Iron Ore
+Mar 2023,141.4,Iron Ore
+Jun 2023,191.8,Iron Ore
+Sep 2023,196.5,Iron Ore
+Dec 2023,166.2,Iron Ore
+Mar 2024,150.3,Iron Ore
+Jun 2024,195.3,Iron Ore
+Jun 2016,30.3,Coal
+Sep 2016,37.2,Coal
+Dec 2016,33.3,Coal
+Mar 2017,23.9,Coal
+Jun 2017,26.0,Coal
+Sep 2017,35.1,Coal
+Dec 2017,39.0,Coal
+Mar 2018,36.4,Coal
+Jun 2018,43.6,Coal
+Sep 2018,43.6,Coal
+Dec 2018,50.0,Coal
+Mar 2019,36.0,Coal
+Jun 2019,52.5,Coal
+Sep 2019,63.2,Coal
+Dec 2019,77.6,Coal
+Mar 2020,75.1,Coal
+Jun 2020,87.2,Coal
+Sep 2020,73.1,Coal
+Dec 2020,56.2,Coal
+Mar 2021,50.8,Coal
+Jun 2021,54.9,Coal
+Sep 2021,66.5,Coal
+Dec 2021,54.0,Coal
+Mar 2022,43.3,Coal
+Jun 2022,61.7,Coal
+Sep 2022,64.8,Coal
+Dec 2022,71.4,Coal
+Mar 2023,62.4,Coal
+Jun 2023,82.4,Coal
+Sep 2023,86.6,Coal
+Dec 2023,90.9,Coal
+Mar 2024,79.3,Coal
+Jun 2024,79.9,Coal
+Jun 2016,35.1,Other
+Sep 2016,44.3,Other
+Dec 2016,48.8,Other
+Mar 2017,47.6,Other
+Jun 2017,47.9,Other
+Sep 2017,51.6,Other
+Dec 2017,57.9,Other
+Mar 2018,53.9,Other
+Jun 2018,61.1,Other
+Sep 2018,69.5,Other
+Dec 2018,65.1,Other
+Mar 2019,50.0,Other
+Jun 2019,69.2,Other
+Sep 2019,68.9,Other
+Dec 2019,87.5,Other
+Mar 2020,48.4,Other
+Jun 2020,59.6,Other
+Sep 2020,66.8,Other
+Dec 2020,64.4,Other
+Mar 2021,60.9,Other
+Jun 2021,80.7,Other
+Sep 2021,101.8,Other
+Dec 2021,111.0,Other
+Mar 2022,101.0,Other
+Jun 2022,131.5,Other
+Sep 2022,179.4,Other
+Dec 2022,178.0,Other
+Mar 2023,181.1,Other
+Jun 2023,222.9,Other
+Sep 2023,247.9,Other
+Dec 2023,261.8,Other
+Mar 2024,197.2,Other
+Jun 2024,210.5,Other
