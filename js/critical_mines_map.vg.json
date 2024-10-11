@@ -8,7 +8,7 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/milnay/FIT3179-Homework-W9/88ca390caede437fe666141e810edd8983e1d673/js/graticules_30.topojson",
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/js/ne_110m_graticules_30.json",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
       },
       "mark": {
@@ -62,7 +62,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/milnay/FIT3179-Homework-W9/main/data/critical_mines_location_data.csv",
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/critical_mines_locations.csv",
         "format": {"type": "csv"}
       },
         "mark": {
