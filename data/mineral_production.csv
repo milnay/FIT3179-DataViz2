@@ -1418,7 +1418,7 @@ Year,Production,State,Mineral Type
 1899,16698.29058,QLD,Iron Ore
 1900,16698.29058,QLD,Iron Ore
 1901,436.88,QLD,Iron Ore
-1902,0,QLD,Iron Ore
+1902,440,QLD,Iron Ore
 1903,9964.928,QLD,Iron Ore
 1904,4501.896,QLD,Iron Ore
 1905,4411.472,QLD,Iron Ore
@@ -1438,9 +1438,9 @@ Year,Production,State,Mineral Type
 1919,25070.816,QLD,Iron Ore
 1920,20024.344,QLD,Iron Ore
 1921,4125.976,QLD,Iron Ore
-1922,0,QLD,Iron Ore
+1922,5000.0,QLD,Iron Ore
 1923,203.2,QLD,Iron Ore
-1924,0,QLD,Iron Ore
+1924,250.6,QLD,Iron Ore
 1925,350.52,QLD,Iron Ore
 1926,4482.592,QLD,Iron Ore
 1927,514.096,QLD,Iron Ore
@@ -2182,7 +2182,7 @@ Year,Production,State,Mineral Type
 1979,33663,VIC,Iron Ore
 1980,26755,VIC,Iron Ore
 1981,41160,VIC,Iron Ore
-1982,0,VIC,Iron Ore
+1982,45456,VIC,Iron Ore
 1983,30861,VIC,Iron Ore
 1984,36095,VIC,Iron Ore
 1985,31503,VIC,Iron Ore
