@@ -6,12 +6,18 @@
     "format": {"type": "csv"}
   },
   "vconcat": [
-    {  
+    {
       "width": 480,
       "height": 240,
-      "params": [
-        {"name": "brush", "select": {"type": "interval",
-        "encodings": ["x"]}}
+      "layer":[
+        {
+          "params": [
+        {"name": "brush", 
+        "select": {
+          "type": "interval",
+          "encodings": ["x"]
+          }
+        }
       ],
       "mark": {
         "type": "line",
@@ -37,14 +43,53 @@
         },
         "tooltip": [
           {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
-          {"field": "Production", "aggregate": "mean", "type": "quantitative", "title": "Avg Production (in tonnes)", "format": ".2s"},
+          {"field": "Production", "aggregate": "mean", "type": "quantitative", "title": "Average Production  (in tonnes)", "format": ".2s"},
           {"field": "Mineral Type", "type": "nominal", "title": "Mineral"}
         ]
-      }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "field": "Year",
+                "oneOf": ["1851"]
+                }
+            },
+            {
+              "filter":{
+                "field": "Mineral Type",
+                "oneOf": ["Gold"]
+              }
+            },
+            {
+              "filter":{
+                "field": "State",
+                "oneOf": ["VIC"]
+              }
+            }
+          ],
+          "mark":{
+            "type": "text",
+            "align": "left",
+            "dx": -150,  
+            "dy": -103,
+            "fontWeight":"lighter",
+            "color":"black",
+            "font": "serif"
+            },
+          "encoding": {
+            "text": {
+              "value": ["Australia witnessed the Gold Rush between 1850 - 1880 thus resulting in the", " highest recorded production of Gold, about 1.9 million kgs."]
+            }
+          }
+
+        }
+      ]
     },
     {
-    "width": 480,
-    "height": 480,
+    "width": 400,
+    "height": 400,
     "description": "Average Mineral Production by State",
     "data": {
       "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/mineral_production.csv",
@@ -73,7 +118,7 @@
       {
         "mark":{
           "type": "arc",
-          "innerRadius": 25, 
+          "innerRadius": 20, 
           "stroke": "#fff"
 
         }
