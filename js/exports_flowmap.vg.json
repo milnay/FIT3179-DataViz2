@@ -14,7 +14,21 @@
           "labels": ["Show All", "Top 5", "Top 10", "Top 20"],
           "name": "Show top n exports: "
         }
-      }
+        },
+        {
+          "name": "select_year",
+          "value": "2022",
+          "bind": {
+            "input": "select",
+            "options":[
+              "1988",
+              "2022"
+            ],
+            "labels": ["1988", "2022"],
+            "name": "Select Year: "
+            }
+        }
+
       ],
   "layer": [
   {
@@ -31,7 +45,7 @@
   }, 
   {
       "data": {
-        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports_2022.csv"
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv"
       },
       "transform": [
         {
@@ -54,20 +68,23 @@
           "as": "origin_longitude"
         },
         {
-          "calculate": "(datum['Export (US$ Thousand)']*1000)",
+          "calculate": "toNumber(datum['Export (US$ Thousand)'])",
           "as": "export_value"
         },
         {
-          "sort": [{"field": "Export (US$ Thousand)", "order": "descending"}],
+          "sort": [{"field": "export_value", "order": "descending"}],
           "window": [
             {
               "op": "rank",
               "as": "rank"
             }
-        ]
+        ], "groupby": ["Year"]
         },
         {
           "filter": "(topn == null) || (datum.rank <= topn)"
+        },
+        {
+          "filter": "datum.Year == select_year"
         }
        
       ],
@@ -101,8 +118,8 @@
         "type": "quantitative",
         "scale": {
           "type": "threshold",
-          "domain": [10000000, 90000000],
-          "range": [5,10,15]
+          "domain": [1000000, 10000000, 90000000],
+          "range": [5, 10,15,20]
         },
         "legend": {"format": ".1s",
         "title": "Export Value (in $USD)",
@@ -136,35 +153,40 @@
       "lookup": "name",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports_2022.csv"
+          "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv"
         },
         "key": "Partner Name",
-        "fields": ["Export (US$ Thousand)"]
+        "fields": ["Export (US$ Thousand)", "Partner Name"]
       },
-      "as": "has_export_data"
+      "as": ["has_export_data", "Partner Name"]
     },
     {
       "filter": "datum.has_export_data != null"
     },
     {
-      "sort": [{"field": "has_export_data", "order": "descending"}],
+      "calculate": "toNumber(datum.has_export_data)", "as": "export_value"
+    },
+    {
+      "sort": [{"field": "export_value", "order": "descending"}],
       "window": [
         {
           "op": "rank",
           "as": "rank"
         }
-    ]
+    ], "groupby": ["Year"]
     },
     {
       "filter": "(topn == null) || (datum.rank <= topn)"
+    },
+    {
+      "filter":"datum.Year == select_year"
     }
   ],
   "projection": {
     "type": "equalEarth"
         },
   "mark": {
-    "type":"circle",
-    "tooltip": false
+    "type":"circle"
     },
     "encoding": {
       "longitude": {
@@ -181,7 +203,11 @@
       "color": {
         "value": "white"
       },
-      "stroke":{"value": "black"}
+      "stroke":{"value": "black"},
+      "tooltip": {
+        "field": "Partner Name",
+        "title": "Partner Name"
+      }
     }
 
   }, 
@@ -220,7 +246,7 @@
   },
   {
     "data":{
-      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports_2022.csv", "format": {"type": "csv"}
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv", "format": {"type": "csv"}
     },
     "transform": [
       {
@@ -262,7 +288,7 @@
   },
   {
     "data":{
-      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports_2022.csv", "format": {"type": "csv"}
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv", "format": {"type": "csv"}
     },
     "transform": [
       {
@@ -295,6 +321,127 @@
       },
       "color": {
         "value": "purple"
+      }
+  }
+  },
+  {
+    "data":{
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv", "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "filter":"datum['Partner Name'] === 'Japan'"
+      },
+      {
+        "calculate": "(104.1954)", "as": "japan_longitude"
+      },
+      {
+        "calculate": "(35.8617)", "as": "japan_latitude"
+      },
+      {
+        "calculate": "format(datum['Export (US$ Thousand)'], '.2s')", "as": "export_value"
+      }
+    ],
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "dx": 90,  
+      "dy": 70,
+      "fontWeight":"lighter",
+      "color": "skyblue",
+      "font": "serif"
+    },
+    "encoding": {
+      "longitude": {
+        "field": "japan_longitude",
+        "type": "quantitative"
+      }, 
+      "tooltip":{
+        "field": "export_value"
+      },
+      "latitude": {
+        "field": "japan_latitude", 
+        "type": "quantitative"
+      },   
+      "text": {
+        "value":["In 1988, Japan was the largest", "importer of Australian Minerals,", 
+        "with a total value of around $1 million USD "]
+        
+      }}
+  },
+  {
+    "data":{
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv", "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "filter":"datum['Partner Name'] === 'China'"
+      },
+      {
+        "calculate": "(104.1954)", "as": "china_longitude"
+      },
+      {
+        "calculate": "(35.8617)", "as": "china_latitude"
+      },
+      {
+        "calculate": "format(datum['Export (US$ Thousand)'], '.2s')", "as": "export_value"
+      }
+    ],
+    "mark": {
+      "type": "circle"
+    },
+    "encoding": {
+      "longitude": {
+        "field": "china_longitude",
+        "type": "quantitative"
+      }, 
+      "latitude": {
+        "field": "china_latitude", 
+        "type": "quantitative"
+      },   
+      "size": {
+        "value": 70
+      },
+      "color": {
+        "value": "purple"
+      }
+  }
+  },
+  {
+    "data":{
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/aus_exports.csv", "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "filter":"datum['Partner Name'] === 'Japan'"
+      },
+      {
+        "calculate": "(138.252924)", "as": "japan_longitude"
+      },
+      {
+        "calculate": "(36.204824)", "as": "japan_latitude"
+      },
+      {
+        "calculate": "format(datum['Export (US$ Thousand)'], '.2s')", "as": "export_value"
+      }
+    ],
+    "mark": {
+      "type": "circle"
+    },
+    "encoding": {
+      "longitude": {
+        "field": "japan_longitude",
+        "type": "quantitative"
+      }, 
+      "latitude": {
+        "field": "japan_latitude", 
+        "type": "quantitative"
+      },   
+      "size": {
+        "value": 70
+      },
+      "color": {
+        "value": "skyblue"
       }
   }
   }
