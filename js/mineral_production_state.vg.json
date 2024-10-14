@@ -38,7 +38,8 @@
           "color": {
             "field": "Mineral Type",
             "type": "nominal",
-            "legend": {"title": "Mineral Type"}
+            "legend": {"title": "Mineral Type", 
+            "values": ["Gold", "Coal", "Iron Ore"]}
           },
           "tooltip": [
             {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
