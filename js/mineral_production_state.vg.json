@@ -1,162 +1,122 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Average Mineral Production (by States and Minerals)",
-  "data": {
-    "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/mineral_production.csv",
-    "format": {"type": "csv"}
-  },
-  "vconcat": [
-    {
-      "width": 480,
-      "height": 240,
-      "layer":[
-        {
-          "params": [
-        {"name": "brush", 
-        "select": {
-          "type": "interval",
-          "encodings": ["x"]
-          }
-        }
-      ],
-      "mark": {
-        "type": "line",
-        "tooltip": true,
-        "interpolate": "monotone"
-      },
-      "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "temporal",
-          "axis": {"format": "%Y"}
-        },
-        "y": {
-          "aggregate": "mean",
-          "field": "Production(normalised)",
-          "type": "quantitative",
-          "title": "Average Normalised Production"
-        },
-        "color": {
-          "field": "Mineral Type",
-          "type": "nominal",
-          "legend": {"title": "Mineral Type"}
-        },
-        "tooltip": [
-          {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
-          {"field": "Production", "aggregate": "mean", "type": "quantitative", "title": "Average Production  (in tonnes)", "format": ".2s"},
-          {"field": "Mineral Type", "type": "nominal", "title": "Mineral"}
-        ]
-          }
-        },
-        {
-          "transform": [
-            {
-              "filter": {
-                "field": "Year",
-                "oneOf": ["1851"]
-                }
-            },
-            {
-              "filter":{
-                "field": "Mineral Type",
-                "oneOf": ["Gold"]
-              }
-            },
-            {
-              "filter":{
-                "field": "State",
-                "oneOf": ["VIC"]
-              }
-            }
-          ],
-          "mark":{
-            "type": "text",
-            "align": "left",
-            "dx": -150,  
-            "dy": -103,
-            "fontWeight":"lighter",
-            "color":"black",
-            "font": "serif"
-            },
-          "encoding": {
-            "text": {
-              "value": ["Australia witnessed the Gold Rush between 1850 - 1880 thus resulting in the", " highest recorded production of Gold, about 1.9 million kgs."]
-            }
-          }
-
-        }
-      ]
-    },
-    {
-    "width": 400,
-    "height": 400,
-    "description": "Average Mineral Production by State",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Average Mineral Production (by States and Minerals)",
     "data": {
       "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/mineral_production.csv",
       "format": {"type": "csv"}
     },
-    "transform": [
+    "vconcat": [
       {
-        "filter": {"param": "brush"}
-      },
-      {
-      "aggregate": [
-        {
-          "op": "mean",
-          "field": "Production(normalised)",
-          "as": "Average Production"
-        }
-      ],
-      "groupby": ["State"]  
-    },
-    {
-      "calculate": "(datum['Average Production']* 100)",
-      "as": "state_tooltip"
-    }
-    ],
-    "layer": [
-      {
-        "mark":{
-          "type": "arc",
-          "innerRadius": 20, 
-          "stroke": "#fff"
-
-        }
-      },
-      {
-        "mark":{
-          "type": "text",
-          "radiusOffset": 20
+        "width": 480,
+        "height": 240,
+       
+        "params": [
+          {"name": "brush", 
+          "select": {
+            "type": "interval",
+            "encodings": ["x"]
+            }
+          }
+        ],
+        "mark": {
+          "type": "line",
+          "tooltip": true,
+          "interpolate": "monotone"
         },
         "encoding": {
-          "text":{
-            "field":"State",
-            "type": "nominal"
-            }
+          "x": {
+            "field": "Year",
+            "type": "temporal",
+            "axis": {"format": "%Y"}
+          },
+          "y": {
+            "aggregate": "mean",
+            "field": "Production(normalised)",
+            "type": "quantitative",
+            "title": "Average Normalised Production"
+          },
+          "color": {
+            "field": "Mineral Type",
+            "type": "nominal",
+            "legend": {"title": "Mineral Type"}
+          },
+          "tooltip": [
+            {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+            {"field": "Production", "aggregate": "mean", "type": "quantitative", "title": "Avg Production (in tonnes)", "format": ".2s"},
+            {"field": "Mineral Type", "type": "nominal", "title": "Mineral"}
+          ]
+        }
+      },
+      {
+      "width": 400,
+      "height": 400,
+      "description": "Average Mineral Production by State",
+      "data": {
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/mineral_production.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        {
+          "filter": {"param": "brush"}
+        },
+        {
+        "aggregate": [
+          {
+            "op": "mean",
+            "field": "Production(normalised)",
+            "as": "Average Production"
+          }
+        ],
+        "groupby": ["State"]  
+      },
+      {
+        "calculate": "(datum['Average Production']* 100)",
+        "as": "state_tooltip"
+      }
+      ],
+      "layer": [
+        {
+          "mark":{
+            "type": "arc",
+            "innerRadius": 20, 
+            "stroke": "#fff",
+            "tooltip": true
+          }
+        },
+        {
+          "mark":{
+            "type": "text",
+            "radiusOffset": 20
+          },
+          "encoding": {
+            "text":{
+              "field":"State",
+              "type": "nominal"
+              }
+          }
+        }
+      ],
+      "encoding": {
+        "theta": {
+          "field": "Average Production",
+          "type": "quantitative",
+          "stack": "normalize"
+        },
+        "radius": {
+          "field": "Average Production",
+          "scale": {
+            "type": "sqrt", "zero": true, "rangeMin": 10,"rangeMax": 150
+          }
+        },
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "legend": null
         }
       }
-    ],
-    "encoding": {
-      "theta": {
-        "field": "Average Production",
-        "type": "quantitative",
-        "stack": true
-      },
-      "radius": {
-        "field": "Average Production",
-        "scale": {
-          "type": "sqrt", "zero": true, "rangeMin": 10,"rangeMax": 150
-        }
-      },
-      "color": {
-        "field": "State",
-        "type": "nominal",
-        "legend": null
-      },
-      "tooltip":{"field": "state_tooltip"}
+      
     }
-    
+  
+    ]
   }
-
-  ]
-}
+  
