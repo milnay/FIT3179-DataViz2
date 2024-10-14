@@ -1,5 +1,5 @@
 Name,State,Latitude,Longitude,Status,Commodity Group,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Mineral Type
-Abercorn,QLD,-25.1351,151.1312,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Abercorn,QLD,-25.1351,151.1312,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Adamsfield,TAS,-42.7279,146.3296,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Agricola,SA,-36.1867,139.6796,Operating mine,Magnesium,,,,,,Base Metals and Alloys
 Albany,WA,-34.6968,118.5312,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
@@ -18,37 +18,37 @@ Attunga,NSW,-30.9167,150.9337,Mineral deposit,Tungsten,,,,,,Base Metals and Allo
 Australian Vanadium,WA,-26.9676,118.6463,Mine - under development,Titanium,,,,,,Base Metals and Alloys
 Avebury,TAS,-41.9201,145.2485,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Avonbank,VIC,-36.6370,142.3089,Mine - under development,Titanium,,,,,,Base Metals and Alloys
-Baal Gammon,QLD,-17.3805,145.3269,Mine - care and maintenance,Indium,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Baal Gammon,QLD,-17.3805,145.3269,Mine - care and maintenance,Indium,,,,,,Rare Earth Elements
 Balcanoona,SA,-30.5271,139.3,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Bald Hill,WA,-31.5198,122.1785,Operating mine,"Lithium , Tantalum , Niobium",,,,,,Other
 Balla Balla,WA,-20.7660,117.7757,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Balranald,NSW,-34.4599,143.4612,Mine - under development,Titanium,,,,,,Base Metals and Alloys
 Bandalup,WA,-33.6086,120.3583,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
-Barbara,QLD,-20.4206,139.8517,Mine - care and maintenance,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Barbara,QLD,-20.4206,139.8517,Mine - care and maintenance,Cobalt,,,,,,Rare Earth Elements
 Barnes Hill,TAS,-41.2212,146.7726,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Barrambie,WA,-27.4332,119.1211,Mine - under development,Titanium,,,,,,Base Metals and Alloys
 Barrow Creek,NT,-21.5167,134.15,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Barton,SA,-30.5293,132.6789,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Basil,NT,-23.4129,135.3134,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Basil,NT,-23.4129,135.3134,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Beharra,WA,-29.4360,115.1115,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Ben Lomond,QLD,-19.3770,146.3,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
 Beta Hunt,WA,-31.2403,121.6939,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Beyondie,WA,-23.1187,120.5514,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Bidaminna,WA,-31.1005,115.6034,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Bielsdown,NSW,-30.2256,152.7203,Mineral deposit,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Bielsdown,NSW,-30.2256,152.7203,Mineral deposit,Antimony,,,,,,Rare Earth Elements
 Big Hill-Cookes Creek,WA,-21.6558,120.4625,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 Bigrlyi,NT,-22.2202,131.0432,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
 Birthday Gift-Triangle,NSW,-33.4838,142.9037,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Black Swan,WA,-30.3934,121.652,Mine - care and maintenance,"Nickel , Cobalt , PGE",,,,,,Other
 Blackwater,TAS,-41.1101,144.9469,Operating mine,Silicon,,,,,,"Silica, Graphite, and Fluorine"
-Blue Spec,WA,-21.8209,120.273,Mine - under development,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Blue Spec,WA,-21.8209,120.273,Mine - under development,Antimony,,,,,,Rare Earth Elements
 Bold Head,TAS,-40.0260,144.0669,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 Boonanarring,WA,-31.2237,115.8346,Operating mine,Titanium,,,,,,Base Metals and Alloys
 Bootu Creek,NT,-18.6998,134.1258,Mine - care and maintenance,Manganese Ore,,,,,,Base Metals and Alloys
 Bowry Creek,TAS,-41.5584,145.171,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
-Broadhurst,WA,-22.2293,122.218,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Broadhurst,WA,-22.2293,122.218,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Brockman,WA,-18.3209,127.7837,Mineral deposit,"REE, Zirconium, Niobium, , Hafnium, Lithium, Tantalum, Gallium",,,,,,Other
-Broken Hill,NSW,-32.0564,141.7906,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Broken Hill,NSW,-32.0564,141.7906,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Broken Hill Cobalt,NSW,-32.0930,141.1938,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Brolga,QLD,-23.0302,150.3,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Browns,NT,-12.9939,130.9975,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
@@ -57,30 +57,30 @@ Bryah Basin,WA,-25.4252,118.4333,Mineral deposit,Manganese Ore,,,,,,Base Metals 
 Buldania,WA,-32.0695,122.0916,Mineral deposit,"Lithium , Tantalum , Niobium",,,,,,Other
 Bulong,WA,-30.6904,121.822,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Bungalally,VIC,-36.8002,142.2488,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Bungonia,NSW,-34.7977,149.8714,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Bungonia,NSW,-34.7977,149.8714,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Burke,QLD,-19.6149,140.217,Mineral deposit,Graphite,,,,,,"Silica, Graphite, and Fluorine"
-Burns Central,WA,-31.1823,122.026,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Burns Central,WA,-31.1823,122.026,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Burracoppin,WA,-31.6973,118.712,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
 Butcherbird-Yanneri,WA,-24.4082,119.7068,Operating mine,Manganese Ore,,,,,,Base Metals and Alloys
 Byro East,WA,-26.0323,116.3791,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Cadia East,NSW,-33.4650,149.0123,Operating mine,"Molybdenum, Rhenium",,,,,,Other
-Cadoux,WA,-30.6772,117.193,Mine - under development,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Cadoux,WA,-30.6772,117.193,Mine - under development,High Purity Alumina,,,,,,Rare Earth Elements
 Callisto,WA,-32.0980,121.6546,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
-Camel Creek,QLD,-18.8169,145.5625,Mineral deposit,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Camel Creek,QLD,-18.8169,145.5625,Mineral deposit,Antimony,,,,,,Rare Earth Elements
 Camel Flat,SA,-30.5649,138.3703,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Camelback Bore,WA,-29.1732,122.2539,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Campoona,SA,-33.5279,136.479,Mineral deposit,Graphite,,,,,,"Silica, Graphite, and Fluorine"
 Canegrass,WA,-30.2046,120.9849,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Canegrass,WA,-28.3571,118.4011,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
-Cangai,NSW,-29.5001,152.4897,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Cangai,NSW,-29.5001,152.4897,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Canoona,QLD,-23.0797,150.2659,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Cape Flattery,QLD,-14.9600,145.33,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Cape Flattery,QLD,-14.9850,145.3228,Operating mine,Silicon,,,,,,"Silica, Graphite, and Fluorine"
-Capricorn Copper,QLD,-19.6975,139.3659,Operating mine,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Capricorn Copper,QLD,-19.6975,139.3659,Operating mine,Cobalt,,,,,,Rare Earth Elements
 Caravel,WA,-30.9696,116.6188,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
 Carboona,NSW,-35.8249,147.7237,Mineral deposit,Fluorine,,,,,,"Silica, Graphite, and Fluorine"
 Carlingup,WA,-33.5727,120.2209,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Carlow Castle,WA,-20.8108,117.0665,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Carlow Castle,WA,-20.8108,117.0665,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Carr Boyd,WA,-30.0659,121.6261,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Cassini,WA,-31.7009,121.6211,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Cataby,WA,-30.7351,115.5387,Operating mine,Titanium,,,,,,Base Metals and Alloys
@@ -95,7 +95,7 @@ Cliffs,WA,-27.3105,120.5528,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Coates,WA,-31.7425,116.4129,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
 Coburn,WA,-26.7038,114.127,Operating mine,Titanium,,,,,,Base Metals and Alloys
 Coglia,WA,-29.0110,122.9884,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Conrad,NSW,-29.9549,151.0244,Mineral deposit,Indium,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Conrad,NSW,-29.9549,151.0244,Mineral deposit,Indium,,,,,,Rare Earth Elements
 Contact,WA,-22.2637,121.1711,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Cooljarloo,WA,-30.6352,115.4242,Operating mine,Titanium,,,,,,Base Metals and Alloys
 Coolup,WA,-32.7229,115.9411,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
@@ -108,7 +108,7 @@ Corkwood,WA,-17.2950,128.1877,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Coronation Dam,WA,-29.5235,122.2705,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Coronation Hill,NT,-13.5862,132.6074,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Cosmos ,WA,-27.6003,120.5763,Mine - under development,"Nickel , Cobalt , PGE",,,,,,Other
-Costerfield,VIC,-36.8901,144.791,Operating mine,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Costerfield,VIC,-36.8901,144.791,Operating mine,Antimony,,,,,,Rare Earth Elements
 Cowalinya,WA,-32.9100,122.29,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
 Creswick,VIC,-37.3204,143.8943,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Cummins Range,WA,-19.2849,127.1666,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
@@ -116,7 +116,7 @@ Cyclone,WA,-28.8171,128.7322,Mine - under development,Titanium,,,,,,Base Metals 
 Cylinder-Karra,NSW,-34.1419,143.0801,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Debella,QLD,-19.9586,141.889,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
 Deep Leads,TAS,-41.4600,146.74,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
-Desolation,QLD,-21.0479,140.5565,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Desolation,QLD,-21.0479,140.5565,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Diggers Area,WA,-32.7158,119.8104,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Dolphin,TAS,-40.0533,144.0587,Operating mine,Tungsten,,,,,,Base Metals and Alloys
 Donald,VIC,-36.4994,142.7815,Mine - under development,Titanium,,,,,,Base Metals and Alloys
@@ -125,12 +125,12 @@ Dubbo,NSW,-32.4643,148.6235,Mine - under development,"REE, Zirconium, Niobium, ,
 Earaheedy,WA,-25.6570,120.6262,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 East Cooee,WA,-31.3444,121.7889,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 East Scotia,WA,-31.1823,121.457,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Eastern Hills,WA,-22.8362,116.1233,Mineral deposit,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Eastern Hills,WA,-22.8362,116.1233,Mineral deposit,Antimony,,,,,,Rare Earth Elements
 Elaine Dorothy,QLD,-20.8028,140.0228,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
-Emmie Bluff,SA,-31.1051,137.1544,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Emmie Bluff,SA,-31.1051,137.1544,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Enacheddong Creek,WA,-22.1312,121.1978,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Eneabba stockpile,WA,-29.8881,115.3037,Operating mine,Titanium,,,,,,Base Metals and Alloys
-Ernest Henry,QLD,-20.4447,140.7058,Operating mine,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Ernest Henry,QLD,-20.4447,140.7058,Operating mine,Cobalt,,,,,,Rare Earth Elements
 Eulogie,QLD,-23.8453,150.4344,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
 Faraday,WA,-31.4844,121.5327,Mineral deposit,"Lithium , Tantalum , Niobium",,,,,,Other
 Fingerboards,VIC,-37.7909,147.3112,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
@@ -148,7 +148,7 @@ Galileo,VIC,-34.9608,142.428,Mineral deposit,Titanium,,,,,,Base Metals and Alloy
 Gallipoli,NSW,-33.4711,142.3353,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Ghan Well,WA,-28.8710,122.132,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Ghost Rocks,WA,-29.5275,120.8713,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Gibson,WA,-33.5960,122.0053,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Gibson,WA,-33.5960,122.0053,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Gilligans,NSW,-33.6674,142.0185,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Ginkgo-Crayfish-Snapper,NSW,-33.3659,142.2247,Operating mine,Titanium,,,,,,Base Metals and Alloys
 Glen Eden,NSW,-29.6227,151.8637,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
@@ -160,37 +160,37 @@ Goongarrie,WA,-30.0085,121.1476,Mineral deposit,"Scandium , Cobalt , PGE , Nicke
 Goschen,VIC,-35.5599,143.5316,Mine - under development,Titanium,,,,,,Base Metals and Alloys
 Goschen Central,VIC,-35.8787,143.3567,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Governor Broome,WA,-34.2438,115.3993,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Great Australia Complex,QLD,-20.7206,140.5105,Mine - care and maintenance,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
-Great White,SA,-32.8286,134.7393,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Great Australia Complex,QLD,-20.7206,140.5105,Mine - care and maintenance,Cobalt,,,,,,Rare Earth Elements
+Great White,SA,-32.8286,134.7393,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Greenbushes,WA,-33.8558,116.0668,Operating mine,"Lithium , Tantalum , Niobium",,,,,,Other
-Greenmount,QLD,-21.0255,140.5297,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Greenmount,QLD,-21.0255,140.5297,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Grey Dam,WA,-30.4721,122.1492,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Griffiths Hill,QLD,-17.1212,144.408,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
 Groote Eylandt,NT,-13.9922,136.4455,Operating mine,Manganese Ore,,,,,,Base Metals and Alloys
 Gunnawarra,QLD,-17.9485,145.1396,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Halidon,SA,-34.8596,140.132,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Hammerhead,SA,-32.7737,134.752,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Hammerhead,SA,-32.7737,134.752,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Hampton,WA,-30.4663,122.0392,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Happy Valley,WA,-33.5499,115.7162,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Hassell Beach,WA,-34.7737,118.416,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Hatches Creek,NT,-20.8861,135.188,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 Hawkes Creek,TAS,-41.0960,144.8844,Operating mine,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Hawkwood,QLD,-25.7881,150.8528,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Hillgrove,NSW,-30.5745,151.9009,Mine - care and maintenance,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Hillgrove,NSW,-30.5745,151.9009,Mine - care and maintenance,Antimony,,,,,,Rare Earth Elements
 HJ Reef,QLD,-20.6746,140.4772,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Holbrook,NSW,-35.7165,147.3616,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
-Home of Bullion,NT,-21.5127,134.1564,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Home of Bullion,NT,-21.5127,134.1564,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Homeville,NSW,-32.0105,147.0487,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Honeymoon Well,WA,-26.9200,120.379,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Hopelands East,WA,-32.3963,115.907,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Horseshoe,QLD,-20.9639,140.2842,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Horseshoe,QLD,-20.9639,140.2842,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Huandot,NT,-13.0029,131.1036,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Hurlls Hill,NSW,-31.4809,152.8674,Mineral deposit,"Scandium , Cobalt , PGE , Nickel",,,,,,Other
 Irwin-Coglia,WA,-29.1547,123.046,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Isabel (Herberton),QLD,-17.3856,145.3632,Mineral deposit,Indium,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Isabel (Herberton),QLD,-17.3856,145.3632,Mineral deposit,Indium,,,,,,Rare Earth Elements
 Jacinth-Ambrosia,SA,-30.9076,132.2203,Operating mine,Titanium,,,,,,Base Metals and Alloys
 Jamieson Tank,SA,-33.4720,136.3237,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
-Jasper Block,QLD,-20.6883,140.5143,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Jasper Block,QLD,-20.6883,140.5143,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Jaws,NSW, -33.8565,142.0609,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Jericho,WA,-27.3899,120.5755,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Jimberlana,WA,-32.2370,120.4542,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
@@ -205,7 +205,7 @@ Kara,TAS,-41.3096,145.7746,Operating mine,Tungsten,,,,,,Base Metals and Alloys
 Kara No. 2,TAS,-41.3105,145.8404,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 Kathleen Valley,WA,-27.4694,120.5581,Mine - under development,"Lithium , Tantalum , Niobium",,,,,,Other
 Kemerton,WA,-33.1781,115.7441,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Kerrigan-Bradley,WA,-32.6608,118.8313,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Kerrigan-Bradley,WA,-32.6608,118.8313,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Keysbrook,WA,-32.4687,115.9424,Operating mine,Titanium,,,,,,Base Metals and Alloys
 Kiaka Hills ,WA ,-30.4529,116.0984,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Kilba,WA,-22.7797,115.5524,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
@@ -217,14 +217,14 @@ Koppio,SA,-34.4274,135.9072,Mineral deposit,Graphite,,,,,,"Silica, Graphite, and
 Korella,QLD,-21.9388,139.9757,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
 Kulwin-Woornack,VIC,-35.0568,142.632,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Kunwarara,QLD,-22.8814,150.1869,Operating mine,Magnesium,,,,,,Base Metals and Alloys
-Kuridala,QLD,-21.2751,140.506,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Kuridala,QLD,-21.2751,140.506,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Lagoon Hill,QLD,-23.0744,150.2192,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Lake Hope,WA,-32.4100,120.25,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Lake Hope,WA,-32.4100,120.25,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Lake Maitland,WA,-27.1772,121.0819,Mine - under development,Vanadium,,,,,,Base Metals and Alloys
 Lake Rebecca,WA,-30.0655,122.357,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Lanfranchi,WA,-31.5055,121.8429,Mine - care and maintenance,"Nickel , Cobalt , PGE",,,,,,Other
 Larkin Find,WA,-29.4663,122.2577,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Lava Plains,QLD,-18.4363,144.7563,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Lava Plains,QLD,-18.4363,144.7563,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Lawlers,WA,-28.0967,120.6405,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Leinster,WA,-28.1674,120.9166,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Lighthouse,QLD,-18.3944,144.1733,Mine - care and maintenance,Silicon,,,,,,"Silica, Graphite, and Fluorine"
@@ -240,7 +240,7 @@ Mangaroon,WA,-23.9560,116.033,Mineral deposit,Rare Earth Elements (REE),,,,,,Oth
 Manna,WA,-30.8700,122.53,Mineral deposit,"Lithium , Tantalum , Niobium",,,,,,Other
 Maralla Road,WA,-31.7388,115.9704,Operating mine,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Marble Bar,WA,-21.1881,119.864,Mineral deposit,"Lithium , Tantalum , Niobium",,,,,,Other
-Maroochydore,WA,-22.1991,122.3141,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Maroochydore,WA,-22.1991,122.3141,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Marriott,WA,-28.4491,120.9915,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Mary Kathleen,QLD,-20.7155,140.004,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
 Massidon,NSW,-33.1306,141.3444,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
@@ -248,18 +248,18 @@ Maureen,QLD,-18.0030,143.427,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
 Mawson,WA,-30.7375,124.4468,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 May Downs,Qld ,-20.6570,139.4149,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Maydena,TAS,-42.7768,146.5894,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
-McCabe,QLD,-21.0673,140.4894,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+McCabe,QLD,-21.0673,140.4894,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 McCalls,WA,-30.9578,115.9294,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 McIntosh,WA,-17.6111,127.9626,Mineral deposit,Graphite,,,,,,"Silica, Graphite, and Fluorine"
-Meckering,WA,-31.6847,117.0608,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Meckering,WA,-31.6847,117.0608,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Medcalf,WA,-32.5338,120.7931,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Meecharra,WA,-22.0766,120.4043,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Meentheena,WA,-21.2368,120.4742,Mineral deposit,Fluorine,,,,,,"Silica, Graphite, and Fluorine"
 Melba Flats,TAS,-41.8500,145.3833,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Mercury,VIC,-34.8989,142.3522,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Merlin,QLD,-21.6533,140.4931,Mine - care and maintenance,"Molybdenum, Rhenium",,,,,,Other
-MG14,SA,-31.4346,137.1509,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
-Millennium,QLD,-20.5968,140.1943,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+MG14,SA,-31.4346,137.1509,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
+Millennium,QLD,-20.5968,140.1943,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Milo,QLD,-20.7587,140.2222,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
 Mindarie,SA,-34.7563,140.1389,Mine - under development,Titanium,,,,,,Base Metals and Alloys
 Mindijup,WA,-34.7689,118.0768,Operating mine,Silicon,,,,,,"Silica, Graphite, and Fluorine"
@@ -279,25 +279,25 @@ Mount Deans,WA,-32.3045,121.7851,Mineral deposit,"Lithium , Tantalum , Niobium",
 Mount Dromedary,QLD,-19.6180,140.216,Mineral deposit,Graphite,,,,,,"Silica, Graphite, and Fluorine"
 Mount Fitch,NT,-12.9468,130.9483,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Mount Holland,WA,-32.0876,119.7485,Mine - under development,"Lithium , Tantalum , Niobium",,,,,,Other
-Mount Hope,SA,-34.1629,135.3798,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Mount Hope,SA,-34.1629,135.3798,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Mount Hutton,SA,-30.4890,138.302,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Mount Ida,WA,-29.0940,120.461,Mineral deposit,"Lithium , Tantalum , Niobium",,,,,,Other
-Mount Isa,QLD,-20.7434,139.4783,Operating mine,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Mount Isa,QLD,-20.7434,139.4783,Operating mine,Cobalt,,,,,,Rare Earth Elements
 Mount Jewell,WA,-30.1804,121.456,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Mount Keith,WA,-27.2296,120.5417,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Mount Lindsay,TAS,-41.6973,145.3286,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 Mount Margaret,WA,-28.3119,120.9861,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Mount Marion,WA,-31.0738,121.4611,Operating mine,"Lithium , Tantalum , Niobium",,,,,,Other
 Mount Martin,WA,-31.0089,121.68,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Mount Mulcahy,WA,-27.0534,117.697,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Mount Mulcahy,WA,-27.0534,117.697,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Mount Mulgine,WA,-29.1785,116.9774,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
-Mount Oxide,QLD,-19.4787,139.3883,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Mount Oxide,QLD,-19.4787,139.3883,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Mount Paynter,NSW,-35.9004,147.6301,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 Mount Peak,QLD,-21.6290,133.2954,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Mount Playfair,SA,-30.3980,138.2124,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Mount Rove,WA,-22.0418,120.7972,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Mount Sholl,WA,-20.9123,116.8921,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Mount Tabor,QLD,-25.0566,147.5774,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Mount Tabor,QLD,-25.0566,147.5774,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Mount Thirsty,WA,-32.1019,121.6478,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Mount Weld,WA,-28.8599,122.5475,Operating mine,"REE, Zirconium, Niobium, , Hafnium, Lithium, Tantalum, Gallium",,,,,,Other
 Mount Windarra,WA,-28.4852,122.233,Mine - care and maintenance,"Nickel , Cobalt , PGE",,,,,,Other
@@ -307,13 +307,13 @@ Mulga Rock,WA,-29.9043,123.592,Mineral deposit,"Scandium , Cobalt , PGE , Nickel
 Munglinup,WA,-33.6635,120.8586,Mine - under development,Graphite,,,,,,"Silica, Graphite, and Fluorine"
 Munni Munni,WA,-21.1170,116.8296,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Murrin Murrin,WA,-28.7668,121.893,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
-Mutooroo,SA,-32.2496,140.938,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Mutooroo,SA,-32.2496,140.938,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Myrtle Springs,SA,-30.4169,138.2258,Operating mine,Magnesium,,,,,,Base Metals and Alloys
 Nanadie Well,WA,-27.1599,118.9485,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Narraburra,NSW,-34.3162,147.5551,Mineral deposit,"REE, Zirconium, Niobium, , Hafnium, Lithium, Tantalum, Gallium",,,,,,Other
 Nebo-Babel,WA,-26.0954,127.7274,Mine - under development,"Nickel , Cobalt , PGE",,,,,,Other
 Nepean,WA,-31.1637,121.0857,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-New Hope,QLD,-21.7293,140.494,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+New Hope,QLD,-21.7293,140.494,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Nicholas Downs,WA,-22.7739,120.8943,Mine - care and maintenance,Manganese Ore,,,,,,Base Metals and Alloys
 Nico Young,NSW,-34.1725,148.0808,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Night Train,WA,-17.5804,123.1131,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
@@ -323,8 +323,8 @@ NMBD,WA,-32.4504,119.6801,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Nobles Nob,NT,-19.7115,134.2901,Mine - under development,"Bismuth , Cobalt , Indium",,,,,,Other
 Nolans Bore,NT,-22.5821,133.2399,Mine - under development,Rare Earth Elements (REE),,,,,,Other
 North Stanmore,WA,-27.3457,117.9099,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
-North Telfer,WA,-21.3780,122.2489,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
-Northcote,QLD,-17.0058,145.1571,Mine - under development,Antimony,,,,,,Rare Earth Elements (REE) and Specialty Elements
+North Telfer,WA,-21.3780,122.2489,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
+Northcote,QLD,-17.0058,145.1571,Mine - under development,Antimony,,,,,,Rare Earth Elements
 Northern Operations,WA,-31.1690,121.6514,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Nova,WA,-29.9217,115.3661,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Nova-Bollinger,WA,-31.8199,123.1924,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
@@ -335,13 +335,13 @@ O'Callaghans,WA,-21.7921,122.2585,Mineral deposit,Tungsten,,,,,,Base Metals and 
 O'Connor,WA,-33.1871,122.8422,Mineral deposit,Rare Earth Elements (REE),,,,,,Other
 Olympia,WA,-26.8204,122.1873,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Olympic Dam,SA,-30.4403,136.8894,Operating mine,Rare Earth Elements (REE),,,,,,Other
-Overlander,QLD,-21.0338,139.9095,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Overlander,QLD,-21.0338,139.9095,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Owendale,NSW,-32.5750,147.3844,Mine - under development,"Scandium , Cobalt , PGE , Nickel",,,,,,Other
 Pacific Express,NSW,-31.5205,152.7904,Mineral deposit,"Scandium , Cobalt , PGE , Nickel",,,,,,Other
 Panton,WA,-17.7515,127.8316,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Parks Reef,WA,-26.8450,117.7392,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Peak Hill,WA,-25.4572,118.605,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
-Peko Tailings,NT,-19.6782,134.2838,Operating mine,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Peko Tailings,NT,-19.6782,134.2838,Operating mine,Cobalt,,,,,,Rare Earth Elements
 Pelican,WA,-28.7789,122.5753,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Perponda South,SA,-32.3074,138.4387,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Perry Creek,QLD,-18.7297,145.3347,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
@@ -351,7 +351,7 @@ Pinnacles,QLD,-17.7021,145.1711,Mineral deposit,Fluorine,,,,,,"Silica, Graphite,
 Pinnacles,WA,-30.2758,122.3242,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Pioneer,WA,-31.9697,121.6431,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Pioneer Dome,WA,-31.9103,121.6376,Mineral deposit,"Lithium , Tantalum , Niobium",,,,,,Other
-Portia,SA,-31.4339,140.4511,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Portia,SA,-31.4339,140.4511,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Princhester,QLD,-22.8620,149.977,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Prospect Ridge-Arthur River,TAS,-41.1813,145.4488,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 Pug Hill,SA,-30.3094,138.1136,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
@@ -366,7 +366,7 @@ Renner West,NT,-18.3373,133.6545,Mineral deposit,Manganese Ore,,,,,,Base Metals 
 Richmond,QLD,-20.4652,142.8024,Mine - under development,Vanadium,,,,,,Base Metals and Alloys
 Ripon Hills,WA,-21.2145,120.7433,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Riverina,WA,-29.7493,120.5596,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
-Rocklands,QLD,-20.6724,140.3636,Mine - care and maintenance,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Rocklands,QLD,-20.6724,140.3636,Mine - care and maintenance,Cobalt,,,,,,Rare Earth Elements
 Rockley,NSW,-33.7168,149.5199,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Rosie,WA,-27.6246,122.0143,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Rover 1,NT,-20.0021,133.6567,Mine - under development,"Bismuth , Cobalt , Indium",,,,,,Other
@@ -406,13 +406,13 @@ Stormont,TAS,-41.4978,146.037,Mineral deposit,"Bismuth , Cobalt , Indium",,,,,,O
 Sugarbag Hill ,Qld ,-18.4829,143.6457,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 Sunrise,NSW,-32.7567,147.4196,Mine - under development,"Scandium , Cobalt , PGE , Nickel",,,,,,Other
 Tallebung,NSW,-32.7381,146.5807,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
-Tambellup,WA,-34.0398,117.5314,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
-Tampu,WA,-30.2232,117.8105,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Tambellup,WA,-34.0398,117.5314,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
+Tampu,WA,-30.2232,117.8105,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 Termination Hill,SA,-30.2246,138.0242,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
 The Horn,WA,-28.1674,120.9166,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Thuddungra,NSW,-34.1764,148.0505,Operating mine,Magnesium,,,,,,Base Metals and Alloys
 Thunderbird,WA,-17.4317,122.9679,Operating mine,Titanium,,,,,,Base Metals and Alloys
-Tiger,SA,-32.9114,134.738,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Tiger,SA,-32.9114,134.738,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 TIO,QLD,-17.0960,144.2582,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Toolebuc,QLD,-20.4828,142.851,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
 Torrington,NSW,-29.2697,151.6563,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
@@ -427,7 +427,7 @@ Unicorn,VIC,-36.3386,147.9896,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
 Urquhart,QLD,-12.7500,141.8,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Venus ,WA,-27.8150,120.704,Operating mine,"Nickel , Cobalt , PGE",,,,,,Other
 Victory Bore,WA,-28.2619,118.989,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
-Vulcan,QLD,-21.0506,140.5476,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Vulcan,QLD,-21.0506,140.5476,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Walford Creek,QLD,-17.7858,138.2847,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Waterloo,WA,-28.1438,120.978,Mine - care and maintenance,"Nickel , Cobalt , PGE",,,,,,Other
 Watershed,QLD,-16.3393,144.8808,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
@@ -436,8 +436,8 @@ West Eucla,WA,-32.1852,123.1998,Mineral deposit,Titanium,,,,,,Base Metals and Al
 West Jordan,WA,-27.0167,120.4361,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 West Lynn,NSW,-31.4982,147.0391,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 West Mount Hut,SA,-30.0081,137.7763,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
-West Orient,QLD,-17.3455,145.1841,Mineral deposit,Indium,,,,,,Rare Earth Elements (REE) and Specialty Elements
-White Cloud,WA,-30.8363,117.6691,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+West Orient,QLD,-17.3455,145.1841,Mineral deposit,Indium,,,,,,Rare Earth Elements
+White Cloud,WA,-30.8363,117.6691,Mineral deposit,High Purity Alumina,,,,,,Rare Earth Elements
 White Hill,WA,-26.7321,116.3843,Mineral deposit,Silicon,,,,,,"Silica, Graphite, and Fluorine"
 White Rock,NSW,-34.4989,148.905,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
 White Violet,NT,-22.7316,136.0725,Mineral deposit,Tungsten,,,,,,Base Metals and Alloys
@@ -451,7 +451,7 @@ Wim 150,VIC,-36.8043,142.3678,Mineral deposit,Titanium,,,,,,Base Metals and Allo
 Winchelsea Island,NT,-13.7690,136.508,Mineral deposit,Manganese Ore,,,,,,Base Metals and Alloys
 Winchester,NSW,-33.3400,142.31,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Winchester,NT,-13.0462,131.0612,Mineral deposit,Magnesium,,,,,,Base Metals and Alloys
-Windabout,SA,-31.3894,137.1333,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Windabout,SA,-31.3894,137.1333,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
 Windanya-Blue Dam,WA,-30.3800,121.2538,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Windimurra,WA,-28.2916,118.53,Mine - care and maintenance,Vanadium,,,,,,Base Metals and Alloys
 Wingellina,WA,-26.0396,128.9393,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
@@ -470,9 +470,9 @@ Yangibana,WA,-23.9061,116.2959,Mine - under development,Rare Earth Elements (REE
 Yarawindah Brook,WA,-31.0908,116.2609,Mineral deposit,"Platinum Group Elements (PGE) , Cobalt , Nickel",,,,,,Other
 Yarrabubba,WA,-27.0244,118.7056,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
 Yeelirrie,WA,-27.1797,119.9045,Mineral deposit,Vanadium,,,,,,Base Metals and Alloys
-Yendon,VIC,-37.6572,143.98,Mine - care and maintenance,High Purity Alumina,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Yendon,VIC,-37.6572,143.98,Mine - care and maintenance,High Purity Alumina,,,,,,Rare Earth Elements
 Yeoval,NSW,-32.7299,148.642,Mineral deposit,"Molybdenum, Rhenium",,,,,,Other
 Yerilla,WA,-29.4849,121.905,Mineral deposit,"Nickel , Cobalt , PGE",,,,,,Other
 Youanmi,WA,-28.6089,118.7705,Mineral deposit,Titanium,,,,,,Base Metals and Alloys
-Young Australian,QLD,-21.3378,140.4067,Mineral deposit,Cobalt,,,,,,Rare Earth Elements (REE) and Specialty Elements
-Zeehan,TAS,-41.8720,145.326,Mineral deposit,Indium,,,,,,Rare Earth Elements (REE) and Specialty Elements
+Young Australian,QLD,-21.3378,140.4067,Mineral deposit,Cobalt,,,,,,Rare Earth Elements
+Zeehan,TAS,-41.8720,145.326,Mineral deposit,Indium,,,,,,Rare Earth Elements
