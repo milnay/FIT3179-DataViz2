@@ -62,9 +62,28 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/critical_mines_locations.csv",
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/critical_mines_grouped.csv",
         "format": {"type": "csv"}
       },
+      "params": [
+        {
+          "name": "select_mine",
+          "select":{
+            "type": "point",
+            "fields": ["Name"]
+
+          }
+        },
+        {
+          "name": "highlight",
+          "select":{
+            "type": "point",
+            "fields": ["Mineral Type"]
+          },
+          "bind":"legend"
+        }
+
+      ],
         "mark": {
           "type": "circle",
           "stroke": "black", 
@@ -79,10 +98,16 @@
           "longitude": {"field": "Longitude", "type": "quantitative"},
           "latitude": {"field": "Latitude", "type": "quantitative"},
           "color": {
-            "field": "Commodity Group",
+            "field": "Mineral Type",
             "type": "nominal",
-          "title": "Mineral Group",
+          "title": "Mineral Type",
           "scale": {"scheme": "tableau20"}
+          },
+          "opacity":{
+            "condition": {
+              "param": "highlight",
+              "value": 0.8
+            }, "value":0.2
           },
           "tooltip": [
           {"field": "State", "type": "nominal"},
@@ -90,6 +115,36 @@
           {"field": "Commodity Group", "type": "nominal", "title": "Mineral Group"}]
         }
     
+    },
+    { 
+      "data": {
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/js/aus%20map%20with%20no%20labels.json",
+        "format": {
+        "type": "topojson", "feature": "STE_2021_AUST_GDA2020"
+      }},
+      "mark":{
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "color": "black"
+      },
+      "encoding": {
+        "text": {
+          "condition": {
+            "param": "select_mine"          
+          }
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field":"lat",
+          "type": "quantitative"
+        }
+      }
     }
   ]
 }
