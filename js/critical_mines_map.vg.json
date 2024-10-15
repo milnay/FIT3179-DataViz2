@@ -75,7 +75,7 @@
           "type": "quantitative"
         },   
         "text": {
-          "value":["In 2023, Australia produced 27 minerals", "15 of which ranked in the top five for global supply.  "]
+          "value":["In 2023, Australia produced 27 minerals,", "15 of which ranked in the top five for global supply.  "]
           
         }}
     }, 
