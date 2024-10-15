@@ -13,7 +13,6 @@
       "as": "custom_tooltip"
     }
   ],
-  
   "params": [
     {
       "name": "depositTypeSelection",
@@ -29,71 +28,76 @@
 
   "layer": [
     {
-      "layer" : [
+      "transform": [
         {
-          "transform": [
-            {
-            "filter": "depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'"
-            }
-          ],
-          "mark": {
-          "type": "area"
-                  },
-        "encoding": {
-          "x": {
-            "timeUnit":"yearmonth",
-            "type": "temporal",
-            "field": "Date",
-            "title": "Date",
-            "axis": {"format": "%b %Y"}
-          },
-          "y": {
-            "field": "Expenditure",
-            "type": "quantitative",
-            "title": "Expenditure (in millions)"
-          }, 
-          "tooltip": { "field": "custom_tooltip", "type": "nominal" }
-                  }
+          "filter": "depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'"
+        }
+      ],
+      "mark": {
+        "type": "area", 
+        "color": "#C98A6D"
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "yearmonth",
+          "type": "temporal",
+          "field": "Date",
+          "title": "Date",
+          "axis": {"format": "%b %Y"}
+        },
+        "y": {
+          "field": "Expenditure",
+          "type": "quantitative",
+          "title": "Expenditure (in millions)"
         }, 
+        "tooltip": { "field": "custom_tooltip", "type": "nominal" }
+      }
+    }, 
+    {
+      "transform": [
         {
-          "transform": 
-          [
-          {
-            "window": [
-              {
-                "op": "first_value",
-                "field": "Expenditure",
-                "as": "Initial_Expenditure"
-              },
-              {
-                "op": "last_value",
-                "field": "Expenditure",
-                "as": "Final_Expenditure"
-              }
-                      ]
+          "window": [
+            {
+              "op": "first_value",
+              "field": "Expenditure",
+              "as": "Initial_Expenditure"
+            },
+            {
+              "op": "last_value",
+              "field": "Expenditure",
+              "as": "Final_Expenditure"
+            }
+          ]
         },
         {
-          "filter":
-            "datum.Initial_Expenditure == 353.9 && datum.Final_Expenditure == 1015.3  && depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'" 
+          "filter": "datum.Initial_Expenditure == 353.9 && datum.Final_Expenditure == 1015.3  && depositTypeSelection == 'Total deposits' && datum['Deposit type'] == 'Total deposits'"
         },
         {
-          "calculate": "(datum. Final_Expenditure - datum.Initial_Expenditure) / datum.Initial_Expenditure * 100",
+          "calculate": "(datum.Final_Expenditure - datum.Initial_Expenditure) / datum.Initial_Expenditure * 100",
           "as": "Percentage_Increase_value"
-        }, {
+        },
+        {
           "calculate": "'Exploration expenditure for ' + datum['Deposit type'] + ' rose by ' + format(datum.Percentage_Increase_value, '.1f') + '%' ",
           "as": "Percentage_Increase"
-          }
-        ],
-        "mark": {
+        }
+      ],
+      "mark": {
         "type": "text",
         "align": "center",
-        "dx": -30,
+        "dx": -60,
         "dy": -120,
-        "color": "black", "tooltip":true
-                },
-        "encoding":  {"text": {"field": "Percentage_Increase"}}
+        "color": "black",
+        "tooltip": true
+      },
+      "encoding": {
+        "text": {
+          "value": [
+            "Exploration expenditure for total mineral deposits",
+            "rose by 11.6% annually,",
+            "up to $1015.3 million AUD in 2024."
+          ]
         }
-      ]
+      }
     },
     {
       "transform": [
@@ -106,11 +110,11 @@
       },
       "encoding": {
         "x": {
-          "timeUnit":"yearmonth",
+          "timeUnit": "yearmonth",
           "type": "temporal",
           "field": "Date",
           "title": "Date",
-          "axis": {"format": "%b %Y" }
+          "axis": {"format": "%b %Y"}
         },
         "y": {
           "field": "Expenditure",
@@ -121,8 +125,8 @@
           "field": "Deposit type",
           "type": "nominal",
           "scale": {
-            "domain": ["Existing deposits", "New deposits"],
-            "range": ["#1f77b4", "#aec7e8"]
+            "domain": ["Existing deposits", "New deposits", "Total deposits"],
+            "range": ["#3A7F87", "#FBB13C", "#C98A6D"]
           },
           "title": "Deposit Type"
         }, 
