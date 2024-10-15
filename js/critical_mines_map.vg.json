@@ -2,8 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
   "height": 450,
-  "title": "Critical Mines of Australia 2023",
-  "background":"aliceblue",
+  "title": "Critical Australian Mine Sites and Mineral Deposits 2023",
   "projection": {"type": "mercator"},
   "layer": [
     {
@@ -26,13 +25,59 @@
         },
       "mark": {
         "type": "geoshape", 
-        "fill": "darkolivegreen", 
-        "fillOpacity": 0.2,
-        "stroke": "darkgreen", 
+        "fill": "#D1B28C", 
+        "fillOpacity": 0.8,
+        "stroke": "#2B2B2B", 
         "strokeOpacity": 0.5, 
         "strokeWidth": 0.5
       }
       
+    },
+    {
+      "data":{
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/critical_mines_grouped.csv",
+        "format":{"type": "csv"}
+      },
+      "transform": [
+        {
+          "calculate": "(-27.6728)", "as": "WA_lat"
+        },
+        {
+          "calculate": "(121.6283)", "as": "WA_lon"
+        }, 
+        {
+          "window": [
+            {
+              "op":"row_number", "as": "row_num"
+            }
+          ]
+        },
+        {
+          "filter": "datum.row_num == 1"
+        }
+      ],
+      "mark":{
+        "type": "text",
+        "align": "left",
+        "dx": 250,  
+        "dy": -110,
+        "fontWeight":"lighter",
+        "color":"#2B2B2B",
+        "font": "serif"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "WA_lon",
+          "type": "quantitative"
+        }, 
+        "latitude": {
+          "field": "WA_lat", 
+          "type": "quantitative"
+        },   
+        "text": {
+          "value":["In 2023, Australia produced 27 minerals", "15 of which ranked in the top five for global supply.  "]
+          
+        }}
     }, 
     {
       "data": {
@@ -67,14 +112,6 @@
       },
       "params": [
         {
-          "name": "select_mine",
-          "select":{
-            "type": "point",
-            "fields": ["Name"]
-
-          }
-        },
-        {
           "name": "highlight",
           "select":{
             "type": "point",
@@ -82,7 +119,6 @@
           },
           "bind":"legend"
         }
-
       ],
         "mark": {
           "type": "circle",
@@ -95,56 +131,35 @@
 
         },
         "encoding": {
-          "longitude": {"field": "Longitude", "type": "quantitative"},
+          "longitude": {"field": "Longitude", 
+          "type": "quantitative"},
           "latitude": {"field": "Latitude", "type": "quantitative"},
           "color": {
             "field": "Mineral Type",
             "type": "nominal",
           "title": "Mineral Type",
-          "scale": {"scheme": "tableau20"}
+          "scale": {
+            "domain": ["Base Metals and Alloys", "Other", 
+            "Rare Earth Elements", "Silica, Graphite, and Fluorine"],
+            "range":[
+              "#8B5D3E", "#D55C38","#C49E55", "#3A7F87"
+            ]
+          }
           },
           "opacity":{
             "condition": {
               "param": "highlight",
               "value": 0.8
-            }, "value":0.2
+            }, "value":0.1
           },
           "tooltip": [
           {"field": "State", "type": "nominal"},
-          {"field": "Name", "title": "Mine Site Name"},
-          {"field": "Commodity Group", "type": "nominal", "title": "Mineral Group"}]
+          {"field": "Name", "title": "Site Name"},
+          {"field": "Commodity Group", "type": "nominal", "title": "Mineral"},
+          {"field": "Status", "type": "nominal", "title":"Operating Status"}]
         }
     
-    },
-    { 
-      "data": {
-      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/js/aus%20map%20with%20no%20labels.json",
-        "format": {
-        "type": "topojson", "feature": "STE_2021_AUST_GDA2020"
-      }},
-      "mark":{
-        "type": "text",
-        "align": "center",
-        "baseline": "middle",
-        "fontSize": 16,
-        "fontWeight": "bold",
-        "color": "black"
-      },
-      "encoding": {
-        "text": {
-          "condition": {
-            "param": "select_mine"          
-          }
-        },
-        "longitude": {
-          "field": "lon",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field":"lat",
-          "type": "quantitative"
-        }
-      }
     }
-  ]
+  ],
+  "background": "aliceblue"
 }
