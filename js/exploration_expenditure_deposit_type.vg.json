@@ -114,7 +114,7 @@
           "type": "temporal",
           "field": "Date",
           "title": "Date",
-          "axis": {"format": "%b %Y"}
+          "axis": {"format": "%b %Y", "grid": false}
         },
         "y": {
           "field": "Expenditure",
