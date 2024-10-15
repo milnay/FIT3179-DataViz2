@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "vconcat": [
+  {
+    "width": 500,
+    "height": 300,
+    "params": [
+      {"name": "brush", "select": {"type": "interval",
+      "encodings": ["x"]}}
+      ],
+    "data":{
+      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_deposit_type.csv", "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "area",
+    "transform": [
+      {
+        "filter": "datum['Deposit type'] == 'Total deposits'"
+      },
+      {
+        "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent $' + format(datum['Expenditure'],'.1s') + 'M AUD in exploration of all mineral deposits.'" , "as": "tooltip"
+      }
+    ],
+    "encoding": {
+      "x":{
+        "field": "Date",
+        "type": "temporal",
+        "timeUnit": "yearmonth", 
+        "axis": {"format": "%b %Y"},
+        "title": ""
+      }, 
+      "y":{
+        "field": "Expenditure",
+        "type": "quantitative"
+      },
+      "tooltip":{
+        "field": "tooltip"
+      }
+    }
+  },
+  {
+      "width": 500,
+      "height": 300,
+      "data": {
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_mineral_type.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": {"type":"line"},
+      "transform": [
+        {
+          "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent $' + format(datum['Expenditure'],'.1s') + 'M AUD in exploration of ' + datum['Mineral Type'] + '.'" , "as": "mineral_tooltip"
+        }
+      ],
+      "encoding": {
+      "x": {
+              "field": "Date", 
+              "type": "temporal", 
+              "timeUnit": "yearmonth", 
+              "axis": {"format": "%b %Y"}, 
+              "title": "",
+              "scale": {"domain": {"param": "brush"}}
+              
+          },
+      "y": {
+          "field": "Expenditure",
+          "type": "quantitative",
+          "title": ""
+        }, 
+        "color": {
+          "condition": {
+          "param": "hover",
+          "field":"Mineral Type",
+          "type":"nominal"
+        },
+        "value": "grey"
+        },
+        "opacity": {
+        "condition": {
+          "param": "hover",
+          "value": 1
+        },
+        "value": 0.2},
+        "tooltip": {
+          "field": "mineral_tooltip"
+        }
+      },
+      "layer":[
+        {
+      "description": "transparent layer to make it easier to trigger selection",
+      "params": [{
+        "name": "hover",
+        "value": [{"Mineral Type": "Iron Ore"}],
+        "select": {
+          "type": "point",
+          "fields": ["Mineral Type"],
+          "on": "pointerover"
+        }
+      }],
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    }, {
+      "mark": "line"
+    }, 
+    {
+      "encoding": {
+        "x": {"aggregate": "max", "field": "date", "title": "Date"},
+        "y": {"aggregate": {"argmax": "date"}, "field": "Expenditure"},
+        "text": {
+              "field": "Mineral Type",
+              "type": "nominal"
+            }
+      },
+      "layer": [{
+        "mark": {"type": "circle"}
+      }, {
+        "mark": {"type": "text", "align": "left", "dx": 4},
+        "encoding": {"text": {"field":"Mineral Type", "type": "nominal"}}
+      }]
+    }
+    ]
+   }
+  ]
+}
