@@ -1,123 +1,240 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "vconcat": [
-  {
-    "width": 500,
-    "height": 300,
-    "params": [
-      {"name": "brush", "select": {"type": "interval",
-      "encodings": ["x"]}}
+    {
+      "width": 500,
+      "height": 300,
+      "params": [
+        {
+          "name": "brush",
+          "select": {
+            "type": "interval",
+            "encodings": ["x"]
+          }
+        }
       ],
-    "data":{
-      "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_deposit_type.csv", "format": {
-        "type": "csv"
+      "data": {
+        "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_deposit_type.csv",
+        "format": {
+          "type": "csv"
+        }
+      },
+      "mark": "area",
+      "transform": [
+        {
+          "filter": "datum['Deposit type'] == 'Total deposits'"
+        },
+        {
+          "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent $' + format(datum['Expenditure'],'.1s') + 'M AUD in exploration of all mineral deposits.'",
+          "as": "tooltip"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "axis": {
+            "format": "%b %Y"
+          },
+          "title": ""
+        },
+        "y": {
+          "field": "Expenditure",
+          "type": "quantitative"
+        },
+        "tooltip": {
+          "field": "tooltip"
+        },
+        "color": {"value": "#C98A6D"}
       }
     },
-    "mark": "area",
-    "transform": [
-      {
-        "filter": "datum['Deposit type'] == 'Total deposits'"
-      },
-      {
-        "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent $' + format(datum['Expenditure'],'.1s') + 'M AUD in exploration of all mineral deposits.'" , "as": "tooltip"
-      }
-    ],
-    "encoding": {
-      "x":{
-        "field": "Date",
-        "type": "temporal",
-        "timeUnit": "yearmonth", 
-        "axis": {"format": "%b %Y"},
-        "title": ""
-      }, 
-      "y":{
-        "field": "Expenditure",
-        "type": "quantitative"
-      },
-      "tooltip":{
-        "field": "tooltip"
-      }
-    }
-  },
-  {
+    {
       "width": 500,
       "height": 300,
       "data": {
         "url": "https://raw.githubusercontent.com/milnay/FIT3179-DataViz2/refs/heads/main/data/exploration_expenditure_mineral_type.csv",
-        "format": {"type": "csv"}
+        "format": {
+          "type": "csv"
+        }
       },
-      "mark": {"type":"line"},
+      "mark": {
+        "type": "line"
+      },
       "transform": [
         {
-          "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent $' + format(datum['Expenditure'],'.1s') + 'M AUD in exploration of ' + datum['Mineral Type'] + '.'" , "as": "mineral_tooltip"
+          "calculate": "'In ' + timeFormat(datum.Date, '%B %Y') + ', Australia spent $' + format(datum['Expenditure'],'.1s') + 'M AUD in exploration of ' + datum['Mineral Type'] + '.'",
+          "as": "mineral_tooltip"
         }
       ],
       "encoding": {
-      "x": {
-              "field": "Date", 
-              "type": "temporal", 
-              "timeUnit": "yearmonth", 
-              "axis": {"format": "%b %Y"}, 
-              "title": "",
-              "scale": {"domain": {"param": "brush"}}
-              
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "axis": {
+            "format": "%b %Y"
           },
-      "y": {
+          "title": "",
+          "scale": {
+            "domain": {
+              "param": "brush"
+            }
+          }
+        },
+        "y": {
           "field": "Expenditure",
           "type": "quantitative",
           "title": ""
-        }, 
+        },
         "color": {
-          "condition": {
-          "param": "hover",
-          "field":"Mineral Type",
-          "type":"nominal"
+          "field": "Mineral Type",
+          "scale": {
+            "domain": ["Gold", "Iron Ore", "Coal", "Base Metals", "Other"],
+            "range": ["#D4AF37", "#3A7F87", "#4E4B47", "#D95F02", "#FBB13C"]
+          }
         },
-        "value": "grey"
-        },
-        "opacity": {
-        "condition": {
-          "param": "hover",
-          "value": 1
-        },
-        "value": 0.2},
         "tooltip": {
           "field": "mineral_tooltip"
         }
       },
-      "layer":[
+      "layer": [
         {
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "value": [{"Mineral Type": "Iron Ore"}],
-        "select": {
-          "type": "point",
-          "fields": ["Mineral Type"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, 
-    {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "date", "title": "Date"},
-        "y": {"aggregate": {"argmax": "date"}, "field": "Expenditure"},
-        "text": {
-              "field": "Mineral Type",
-              "type": "nominal"
+          "description": "transparent layer to make it easier to trigger selection",
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["Mineral Type"],
+                "on": "pointerover"
+              }
             }
-      },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"Mineral Type", "type": "nominal"}}
-      }]
+          ],
+          "mark": {
+            "type": "line",
+            "strokeWidth": 8,
+            "stroke": "transparent"
+          }
+        },
+        {
+          "transform":[
+             {
+              "filter": "datum['Mineral Type'] == 'Gold'"
+            },
+            {
+              "window": [
+                {
+                  "op": "max",
+                  "field": "Expenditure",
+                  "as": "maxExpenditure"
+                },
+                {
+                  "op": "rank", 
+                  "field": "maxExpenditure",
+                  "as": "ranking"
+                }
+              ]
+            },
+            {
+              "filter": "datum.ranking == 1"
+            }
+                
+          ],
+          
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": -200,
+            "dy": -135,
+            "color": "purple",
+            "text": "Gold recorded the highest exploration \n expenditure of $400M in June 2021.",
+            "lineBreak": "\n"
+          },
+          "encoding": {
+            "x": {
+              "ffield": "Date",
+            "type": "temporal",
+            "title": ""
+            },
+            "y": {
+              "field": "maxExpenditure",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+
+          "transform":[
+             {
+              "filter": "datum['Mineral Type'] == 'Coal'"
+            },
+            {
+              "window": [
+                {
+                  "op": "min",
+                  "field": "Expenditure",
+                  "as": "minExpenditure"
+                },
+                {
+                  "op": "rank", 
+                  "field": "minExpenditure",
+                  "as": "ranking"
+                }
+              ]
+            },
+            {
+              "filter": "datum.ranking == 1"
+            }
+                
+          ],
+          
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 130,
+            "dy": 7,
+            "color": "purple",
+            "text": "Coal recorded the lowest exploration expenditure of $20M in March 2017.",
+            "lineBreak": "\n"
+          },
+          "encoding": {
+            "x": {
+              "field": "Date",
+            "type": "temporal",
+            "title": ""
+            },
+            "y": {
+              "field": "minExpenditure",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line"
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "param": "hover",
+                "field": "Mineral Type",
+                "type": "nominal",
+                "empty": "none",
+                "legend": null
+              },
+              "value": "grey"
+            },
+            "opacity": {
+              "condition": {
+                "param": "hover",
+                "value": 1
+              },
+              "value": 0.2
+            }
+          }
+        }
+      ]
     }
-    ]
-   }
   ]
 }
