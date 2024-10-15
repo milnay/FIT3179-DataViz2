@@ -39,7 +39,7 @@
           "feature":"ne_110m_admin_0_countries"}
               },
       "mark": {
-          "type": "geoshape", "fill": "forestgreen", "stroke":
+          "type": "geoshape", "fill": "#D1B28C", "stroke":
           "black", "strokeWidth": 0.5, "strokeOpacity": 0.6, "fillOpacity": 0.2
       }
   }, 
@@ -94,8 +94,9 @@
       "mark":{
         "type": "rule",
         "interpolate": "monotone",
-        "stroke": "black",
-        "strokeOpacity": 0.6,
+        "stroke": " #C98A6D",
+        "strokeWidth": 20,
+        "strokeOpacity": 0.7,
         "tooltip": true
       },
       "encoding": {
@@ -123,7 +124,6 @@
         },
         "legend": {"format": ".1s",
         "title": "Export Value (in $USD)",
-        "fillColor": "lightgray",
         "offset": 30,
         "padding": 5
         }
@@ -265,11 +265,10 @@
     "mark": {
       "type": "text",
       "align": "left",
-      "dx": 80,  
-      "dy": -20,
-      "fontWeight":"lighter",
-      "color":"purple",
-      "font": "serif"
+      "dx": 10,  
+      "dy": -60,
+      "fontWeight": "normal",
+      "color":"#3A7F87"
     },
     "encoding": {
       "longitude": {
@@ -320,7 +319,7 @@
         "value": 70
       },
       "color": {
-        "value": "purple"
+        "value": "#C98A6D"
       }
   }
   },
@@ -345,11 +344,10 @@
     "mark": {
       "type": "text",
       "align": "left",
-      "dx": 90,  
-      "dy": 70,
-      "fontWeight":"lighter",
-      "color": "skyblue",
-      "font": "serif"
+      "dx": 79,  
+      "dy": -10,
+      "fontWeight":"normal",
+      "color": "#3A7F87"
     },
     "encoding": {
       "longitude": {
@@ -403,7 +401,7 @@
         "value": 70
       },
       "color": {
-        "value": "purple"
+        "value": "#3A7F87"
       }
   }
   },
@@ -441,7 +439,7 @@
         "value": 70
       },
       "color": {
-        "value": "skyblue"
+        "value": "#3A7F87"
       }
   }
   }
