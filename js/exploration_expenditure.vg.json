@@ -3,7 +3,7 @@
   "vconcat": [
     {
       "title": "Mineral exploration expenditure by Deposit Type",
-      "width": 500,
+      "width": 400,
       "height": 300,
       "params": [
         {
@@ -53,7 +53,7 @@
       }
     },
     {
-      "width": 500,
+      "width": 400,
       "height": 300,
       "title": "Mineral exploration expenditure by Mineral Type",
       "data": {
