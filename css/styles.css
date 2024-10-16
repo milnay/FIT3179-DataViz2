@@ -146,14 +146,14 @@ font-size: small;
 	max-width: 100%;
 }
 .try-this {
-    background-color: #ffd700; /* Bright yellow to stand out */
-    color: #333; /* Dark text to maintain readability */
-    font-weight: bold; /* Emphasize the text */
+    background-color: #ffd700; 
+    color: #333; 
+    font-weight: bold; 
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
-    margin: 20px 0; /* Add space around the element */
-    border-left: 5px solid #ff8c00; /* Optional: a left border to further highlight */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+    border-left: 5px solid #ff8c00; 
 	font-size: small;
 }
 
