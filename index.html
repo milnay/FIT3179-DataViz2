@@ -1,23 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <!-- Import Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
   <script src="js/vega_lite_vis.js"></script>
-  
+
+  <!-- Pure CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all"> 
-  <title> Critical Mines of Australia </title>
-  
+  <title>Critical Mines of Australia</title>
 </head>
 <body>
-  <h1>Minerals of Australia</h1>
-  <div id="critical_mines_map"></div>
 
-  <div id="exploration_expend_deposit_type"></div>
+  <h1>The Economics of Australian Minerals</h1>
+
+  <div class="container">
+
+    <!-- Critical Mines Map -->
+    <div class="grid-item intro-section">
+      <h2>Critical Mines of Australia</h2>
+      <div id= "critical_mines_map" class="grid-item large-chart chart1 container_colour" ></div>
+      <div class="fuel-width-text">
+        <p> Australia is home to some of the largest deposits of critical minerals that fuel technologies and modern economies. 
+          From rare earth to energy minerals, Australia’s vast landscape provides the world with the raw materials that drive innovation. 
+          essential for the functioning of our modern technologies, economies or national security. Understanding their
+          distribution is beneficial for increasing Australi's global production potential.
+          This visualization, explores the critical mines, production, exploration and and global trade that underline the economics of Australian Minerals.
+          The map above outlines the critical mines and mineral deposits of Australia.
+        </p>
+        <p class="try-this"> 
+          Hover over a site to learn more about it. You may also explore the distribution 
+          of critical minerals by clicking on the legend icons.
+        </p>
+      </div>
+    </div>
+
+    <!-- Exploration Expenditure by Mineral Type-->
+    <div class="grid-item">
+      <h2>Exploration Expenditure</h2>
+      <div class="grid-item" id="exploration_expenditure"></div>
+      <div>
+        <p class="text2">
+          Australia has witnessed a steady increase in mineral exploration expenditure 
+          for all deposits, totalling to about $1 billion this year. Consequently, the 
+          exploration expenditure for gold, iron ore, coal, base metals and others has also
+          grown steadily over the past 7 years. In contrast, expenditure for coal has
+          remained more or less the same over the years. Expenditure for gold was at an all time
+          high between 2021 and 2023. 
+        </p>
+        <p class="try-this">
+          Brush over the time axis of the expenditure on total deposits chart to visualise how 
+          it correlates to expenditure on exploration of different minerals.  
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Text for Exploration Expenditure (right, next to the chart) -->
+    <div class="grid-item">
+    <div id="exploration_expenditure">
+    </div>
+    <h2>Average Mineral Production by State</h2>
+    <div class="text2 exploration_desc">
+      <p class="pad">
+        The country witnessed a drastic shift in the mineral market when it comes to
+        statewise production. From 1860 to 1920, New South Wales accounted for about 
+        80% of Australia's mineral production. However since then, for the last century, Victoria
+         and Western Australia have been dominating the mineral market.
+      </p class="pad">
+      <p>
+        1851 - 1870 witnessed the Gold Rush in Australia. During this time, Australia accounted
+         for one third of the world's gold production. This pivotal period is reflected in the chart.
+      </p>
+
+    </div>
+    <p class="try-this">
+      Brush over the time axis of the mineral production chart to visualise how 
+      the distribution of production varies across all states. 
+    </p>
+    <div id="mineral_production" class="grid-item"></div>
+  </div>
+
+    <!-- Exploration Expenditure by deposit Type-->
+    <div class="grid-item">
+      <h2>Exploration Expenditure on Different Deposits </h2>
+      <div id="exploration_expend_deposit_type" class="grid-item"></div>
+    </div>
+    <div class="grid-item">
+      <div class="text2"> 
+        <p class="pad">
+          Exploration expenditure for existing and new deposits refers to the financial
+          investment made to discover and assess mineral resources. There has been 
+          consistent expenditure on exploration over the last 7 years. A total of around $1B
+          has been spent on exploring all total deposits in 2024. Out of this, about $712M accounted 
+          for exploring existing sites while  about $303M was spent on exploring new ones.
+        </p>
+        <p>
+          This analysis
+          is critical to strike a balance between enhancing capability and production 
+          potential of existing deposits while also innovating an exploring for future needs. 
+        </p>
+      </div>
+      <p class="try-this"> Select what deposit type you wish to view the exploration 
+        expenditure for, in the chart on the right. </p>
+    </div>
+    
+    <!-- Row 4: Export Flow Map -->
+    <div class="exports-section slide_up grid-item">
+      <h2>Australia's Mineral Exports</h2>
+      <div id="exports_flowmap" class="visualization grid-item"></div>
+      <p class="text2">
+        The map below provides a visual representation of Australia's mineral export and trade relationships, 
+        showing the movement of minerals to foreign markets. It emphasises Australia's position as a top exporter
+       of important commodities. Australian resources drive industries throughout the globe and highlights the larger
+      economic impact of these exports at the national and international levels. 
+      </p>
+      <p class="text2">
+        Ultimately, by connecting the themes of production, commerce, and economic impact, 
+        this visualisation is essential to comprehending Australia's critical role in the global mineral trade. 
+      </p>
+      <p class="try-this">
+        Use the buttons in the map to filter out top n 
+        importers of Australian minerals.
+      </p>
+    </div>
+    <div>
+      <p class="authorship">
+        Author: Milika Nayak, Date: 16 Oct 2024
+      </p>
+    </div>
+
+  </div>
 
 </body>
 </html>
